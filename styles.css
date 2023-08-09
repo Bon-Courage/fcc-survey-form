@@ -24,22 +24,36 @@ body {
 
 .formGroup {
     margin-bottom: 2rem;
+    display: flexbox;
 }
 
 #survey-form {
     padding: 3rem;
 }
 
-label {
+label,
+input {
     display: flex;
 }
 
-input {
-    display: block;
-}
 
 fieldset {
     border: none;
     padding: 0;
     margin: 0;
+}
+
+.buttons {
+    display: flex;
+    align-content: center;
+    margin: 0;
+}
+
+fieldset input {
+    margin: 0px;
+    margin-right: .5rem;
+}
+
+.section-head {
+    margin-bottom: .3rem;
 }

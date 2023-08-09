@@ -17,19 +17,19 @@
 
         <form id="survey-form">
             <div class="formGroup">
-                <label for="name-label">Name</label>
+                <label class="section-head" for="name-label">Name</label>
                 <input type="text" name="name-label" id="name-label" placeholder="Enter your name" required />
             </div>
             <div class="formGroup">
-                <label for="email-label">Email</label>
+                <label class="section-head" for="email-label">Email</label>
                 <input type="email" name="email-label" id="email-label" placeholder="Enter your email" required />
             </div>
             <div class="formGroup">
-                <label for="age-label">Age (optional)</label>
+                <label class="section-head" for="age-label">Age (optional)</label>
                 <input type="number" name="age-label" id="age-label" min="10" max="100" />
             </div>
             <div class="formGroup">
-                <label for="dropdown">Why do you visit the Island?</label>
+                <label class="section-head" for="dropdown">Why do you visit the Island?</label>
                 <select name="dropdown" id="dropdown">
                     <option value="">--Please choose an option</option>
                     <option value="vacation">Vacation</option>
@@ -44,35 +44,93 @@
             </div>
             <div class="formGroup">
                 <fieldset>
-                    <legned>Would you recommend the Island to a friend?</legned>
-                    <div>
+                    <legend class="section-head">Would you recommend the Island to a friend?</legend>
+                    <div class="buttons">
                         <input type="radio" id="definitely" name="choice" value="definitely" checked />
                         <label for="definitely">Definitely</label>
                     </div>
 
-                    <div>
+                    <div class="buttons">
                         <input type="radio" id="maybe" name="choice" value="maybe" />
                         <label for="maybe">Maybe</label>
                     </div>
 
-                    <div>
+                    <div class="buttons">
                         <input type="radio" id="not-sure" name="choice" value="not-sure" />
                         <label for="not-sure">Not Sure</label>
                     </div>
 
-                    <div>
+                    <div class="buttons">
                         <input type="radio" id="no" name="choice" value="no" />
                         <label for="no">No</label>
                     </div>
                 </fieldset>
             </div>
+            <div class="formGroup">
+
+                <label class="section-head" for="favoritePlace">What is your favourite restaurant on the Island</label>
+                <select name="favoritePlace" id="favoritePlace">
+                    <option value="">--Please choose an option</option>
+                    <option value="mala">Mala</option>
+                    <option value="gun">The Gun</option>
+                    <option value="ippudo">Ippudo</option>
+                    <option value="shack">Shake Shack</option>
+                </select>
+            </div>
 
 
-            <div class="formGroup"></div>
-            <div class="formGroup"></div>
-            <div class="formGroup"></div>
+            <div class="formGroup">
+                <Fieldset>
+                    <legend class="section-head"> What could we have more of? (Check all that apply)</legend>
+                </Fieldset>
+
+                <div class="buttons"><input type="checkbox" id="pubs" name="pubs" checked>
+                    <label for="pubs">Pubs</label>
+                </div>
+
+                <div class="buttons"><input type="checkbox" id="parks" name="parks" checked>
+                    <label for="parks">Parks</label>
+                </div>
+                <div class="buttons"><input type="checkbox" id="groceryStores" name="groceryStores">
+                    <label for="groceryStores">Grocery Stores</label>
+                </div>
+                <div class="buttons"><input type="checkbox" id="fitnessCenters" name="fitnessCenters">
+                    <label for="fitnessCenters">Fitness Centers</label>
+                </div>
+                <div class="buttons"><input type="checkbox" id="coffeeShops" name="coffeeShops">
+                    <label for="coffeeShops">Coffee Shops</label>
+                </div>
+                <div class="buttons"><input type="checkbox" id="libraries" name="libraries">
+                    <label for="libraries">Libraries</label>
+                </div>
+                <div class="buttons"><input type="checkbox" id="playgrounds" name="playgrounds">
+                    <label for="playgrounds">Playgrounds</label>
+                </div>
+                <div class="buttons"><input type="checkbox" id="pharmacies" name="pharmacies">
+                    <label for="pharmacies">Pharmacies</label>
+                </div>
+                <div class="buttons"><input type="checkbox" id="bakeries" name="bakeries">
+                    <label for="bakeries">Bakeries</label>
+                </div>
+                <div class="buttons"><input type="checkbox" id="bookstores" name="bookstores">
+                    <label for="bookstores">Bookstores</label>
+                </div>
+                <div class="buttons"><input type="checkbox" id="petFriendly" name="petFriendly">
+                    <label for="petFriendly">Pet-Friendly Spots</label>
+                </div>
 
 
+            </div>
+
+
+
+
+            <div class="formGroup">
+                <label for="comments">Tell us your comments:</label>
+
+                <textarea id="comments" name="comments" rows="5" cols="33">Enter your comments here....
+                </textarea>
+            </div>
         </form>
     </div>
 </body>
