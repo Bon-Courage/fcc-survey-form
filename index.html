@@ -4,11 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <h1 id="title">Isle of Dogs Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the Island!</p>
+        </header>
 
+        <form id="survey-form">
+            <div class="formGroup">
+                <label for="name-label">Name</label>
+                <input type="text" name="name-label" id="name-label" placeholder="Enter your name" required />
+            </div>
+            <div class="formGroup">
+                <label for="email-label">Email</label>
+                <input type="email" name="email-label" id="email-label" placeholder="Enter your email" required />
+            </div>
+            <div class="formGroup">
+                <label for="age-label">Age (optional)</label>
+                <input type="number" name="age-label" id="age-label" min="10" max="100" />
+            </div>
+            <div class="formGroup">
+                <label for="dropdown">Why do you visit the Island?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="">--Please choose an option</option>
+                    <option value="vacation">Vacation</option>
+                    <option value="business">Business</option>
+                    <option value="family">Family visit</option>
+                    <option value="exploration">Exploration</option>
+                    <option value="education">Education</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="relaxation">Relaxation</option>
+                </select>
+                </select>
+            </div>
+            <div class="formGroup">
+                <fieldset>
+                    <legned>Would you recommend the Island to a friend?</legned>
+                    <div>
+                        <input type="radio" id="definitely" name="choice" value="definitely" checked />
+                        <label for="definitely">Definitely</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="maybe" name="choice" value="maybe" />
+                        <label for="maybe">Maybe</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="not-sure" name="choice" value="not-sure" />
+                        <label for="not-sure">Not Sure</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="no" name="choice" value="no" />
+                        <label for="no">No</label>
+                    </div>
+                </fieldset>
+            </div>
+
+
+            <div class="formGroup"></div>
+            <div class="formGroup"></div>
+            <div class="formGroup"></div>
+
+
+        </form>
+    </div>
 </body>
 
 </html>
