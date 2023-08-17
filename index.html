@@ -9,24 +9,25 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1 id="title">Isle of Dogs Survey Form</h1>
-            <p id="description">Thank you for taking the time to help us improve the Island!</p>
-        </header>
+    <form id="survey-form">
+        <div class="container">
+            <header>
+                <h1 id="title">Isle of Dogs Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve the Island!</p>
+            </header>
 
-        <form id="survey-form">
+
             <div class="formGroup">
-                <label class="section-head" for="name-label">Name</label>
-                <input type="text" name="name-label" id="name-label" placeholder="Enter your name" required />
+                <label id="name-label" class="section-head" for="name-label">Name</label>
+                <input type="text" name="name-label" id="name" placeholder="Enter your name" required />
             </div>
             <div class="formGroup">
-                <label class="section-head" for="email-label">Email</label>
-                <input type="email" name="email-label" id="email-label" placeholder="Enter your email" required />
+                <label id="email-label" class="section-head" for="email-label">Email</label>
+                <input type="email" name="email-label" id="email" placeholder="Enter your email" required />
             </div>
             <div class="formGroup">
-                <label class="section-head" for="age-label">Age (optional)</label>
-                <input type="number" name="age-label" id="age-label" min="10" max="100" />
+                <label id="number-label" class="section-head" for="age-label">Age (optional)</label>
+                <input type="number" name="age-label" id="number" placeholder="Age" min="10" max="100" />
             </div>
             <div class="formGroup">
                 <label class="section-head" for="dropdown">Why do you visit the Island?</label>
@@ -84,38 +85,38 @@
                     <legend class="section-head"> What could we have more of? (Check all that apply)</legend>
                 </Fieldset>
 
-                <div class="buttons"><input type="checkbox" id="pubs" name="pubs" checked>
+                <div class="buttons"><input type="checkbox" value="pubs" id="pubs" name="pubs" checked>
                     <label for="pubs">Pubs</label>
                 </div>
 
-                <div class="buttons"><input type="checkbox" id="parks" name="parks" checked>
+                <div class="buttons"><input type="checkbox" value="parks" id="parks" name="parks" checked>
                     <label for="parks">Parks</label>
                 </div>
-                <div class="buttons"><input type="checkbox" id="groceryStores" name="groceryStores">
+                <div class="buttons"><input type="checkbox" value="stores" id="groceryStores" name="groceryStores">
                     <label for="groceryStores">Grocery Stores</label>
                 </div>
-                <div class="buttons"><input type="checkbox" id="fitnessCenters" name="fitnessCenters">
+                <div class="buttons"><input type="checkbox" value="fit" id="fitnessCenters" name="fitnessCenters">
                     <label for="fitnessCenters">Fitness Centers</label>
                 </div>
-                <div class="buttons"><input type="checkbox" id="coffeeShops" name="coffeeShops">
+                <div class="buttons"><input type="checkbox" value="coffee" id="coffeeShops" name="coffeeShops">
                     <label for="coffeeShops">Coffee Shops</label>
                 </div>
-                <div class="buttons"><input type="checkbox" id="libraries" name="libraries">
+                <div class="buttons"><input type="checkbox" value="libraries" id="libraries" name="libraries">
                     <label for="libraries">Libraries</label>
                 </div>
-                <div class="buttons"><input type="checkbox" id="playgrounds" name="playgrounds">
+                <div class="buttons"><input type="checkbox" value="playgrounds" id="playgrounds" name="playgrounds">
                     <label for="playgrounds">Playgrounds</label>
                 </div>
-                <div class="buttons"><input type="checkbox" id="pharmacies" name="pharmacies">
+                <div class="buttons"><input type="checkbox" value="pharmacies" id="pharmacies" name="pharmacies">
                     <label for="pharmacies">Pharmacies</label>
                 </div>
-                <div class="buttons"><input type="checkbox" id="bakeries" name="bakeries">
+                <div class="buttons"><input type="checkbox" value="bakeries" id="bakeries" name="bakeries">
                     <label for="bakeries">Bakeries</label>
                 </div>
-                <div class="buttons"><input type="checkbox" id="bookstores" name="bookstores">
+                <div class="buttons"><input type="checkbox" value="bookstores" id="bookstores" name="bookstores">
                     <label for="bookstores">Bookstores</label>
                 </div>
-                <div class="buttons"><input type="checkbox" id="petFriendly" name="petFriendly">
+                <div class="buttons"><input type="checkbox" value="petFriendly" id="petFriendly" name="petFriendly">
                     <label for="petFriendly">Pet-Friendly Spots</label>
                 </div>
 
@@ -128,10 +129,11 @@
             <div class="formGroup">
                 <label for="comments">Tell us your comments:</label>
 
-                <textarea id="comments" name="comments" rows="5" cols="33">Enter your comments here....
-                </textarea>
+                <textarea id="comments" name="comments" rows="5" cols="33"
+                    placeholder="Enter your comments here...."></textarea>
             </div>
-        </form>
+            <button id="submit">Submit</button>
+    </form>
     </div>
 </body>
 
